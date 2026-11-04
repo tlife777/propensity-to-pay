@@ -1,0 +1,20 @@
+#!/bin/sh
+# Rejects commits that touch src/ or notebooks/ without a "Decision:" line.
+# Accepted: "Decision: 007" (a decision number) or "Decision: none".
+
+message_file="$1"
+
+touched=$(git diff --cached --name-only -- src notebooks)
+if [ -z "$touched" ]; then
+  exit 0
+fi
+
+if grep -Eq '^Decision: ([0-9]{3}|none)[[:space:]]*$' "$message_file"; then
+  exit 0
+fi
+
+echo "Commit rejected: it touches src/ or notebooks/ without a decision line." >&2
+echo "Add a line with 'Decision: 007' (the decision number) or 'Decision: none'." >&2
+echo "Files that require it:" >&2
+echo "$touched" >&2
+exit 1

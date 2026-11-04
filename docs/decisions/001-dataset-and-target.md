@@ -1,0 +1,8 @@
+# 001: Use "Default of Credit Card Clients" (UCI) and predict who catches up next month
+Question: Which public dataset lets us predict, among customers late in a given month, who catches up the next month, and how do we define that target?
+Options: Dataset: "Default of Credit Card Clients" (monthly repayment status, bills and payments) or "Statlog German Credit" (one good or bad risk label per person, no monthly history). Target: "caught up in t+1", derived from the monthly status, or the dataset's own label, which says whether the customer defaults next month, for all customers and not only those already late.
+Choice: "Default of Credit Card Clients". Population: customers with repayment status of 1 or more in month t. Target: 1 if the status in month t+1 is 0 or less, otherwise 0. A customer can appear once per month they are late.
+Why: It is the only option with a month-by-month history: 30,000 customers with 6 months of status (April to September 2005), which gives 5 month pairs (t, t+1). German Credit has 1,000 people and 0 months of history, so "late now, caught up next month" cannot be defined. The dataset's own label answers a different question (who defaults), while collections needs to know who recovers. Open before building on this: UCI documents -1 as paid duly and 1 to 9 as months of delay, but does not document 0 or -2, so counting them as caught up is an assumption to check in the data. The number of late customers per month is also unknown until the data is opened.
+Evidence: none yet, no data has been opened. Source: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
+Decided by: agent
+For the presentation: yes
