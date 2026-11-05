@@ -6,6 +6,8 @@ A credit card collections project. Among customers who are late in a given month
 
 - Talk to Rafael in Brazilian Portuguese. Code, docs and commit messages are in English.
 - This is Rafael's first machine learning project, and he has to be able to defend every choice in a presentation. Explain what a step does and why before doing it, in plain terms and with a small example.
+- Study comes before each step. Follow the routine in `docs/study-guide.md`: when a roadmap step is about to start, list its concepts and video search terms, then stop until Rafael has watched them and asked his questions. Do the same for any new term that comes up, and add it to the guide.
+- Reading alone doesn't work for him. Don't stack new terms in one message: explain each one in plain words the first time it appears, and check that he can explain a step back before closing it.
 - Rafael makes the decisions. Propose options with a recommendation, and never pick silently.
 - Keep it simple. Choose what can be explained over what scores slightly higher.
 

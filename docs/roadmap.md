@@ -25,6 +25,8 @@ Logistic regression, the baseline, is a classification model despite its name. I
 
 ## Steps
 
+Each step starts with the videos listed for it in the [study guide](study-guide.md). The dates below don't include that study time yet. Nov 22 stays as the target for now, and the Nov 11 checkpoint (step 7) reviews it using how long the first steps actually took.
+
 | # | Date | Step | Done when | Status |
 |---|---|---|---|---|
 | 1 | Nov 5 | Repository, agent files, decision log and git hook | A commit without the trailer is rejected, and the `record-decision` skill works in Pi | In progress: skill not yet tested in Pi |
